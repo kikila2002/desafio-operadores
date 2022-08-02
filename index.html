@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolares.com</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="container-fluid">
+    
+    <nav class="navbar navbar-expand-lg fondoNavbar " aria-label="Eighth navbar example">
+        <div class="div0 container">
+            <a class=" navbar-brand" href="index.html"><img class="tamLogo" src="./IMG/logo.png"
+                    alt="Logo dolares" width="50px" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
+                aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarsExample07">
+                <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  fw-bold" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Calcula tus Dolares</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="px-4 py-5 text-center fondo">
+        <h1 class="display-5 fw-bold">Tu Dolar</h1>
+        <div class="col-lg-6 mx-auto">
+            <h3 class="lead mb-4">Calcula cuantos dolares tenes</h3>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-lg px-4 gap-3 colorBoton">Chequea tu Salud</button>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <div class="div2 row my-4">
+        <h2 class="text-center">Calcular tus Dolares</h2>
+        <p class="text-center">Verificá tus dolares actuales de forma <strong>gratuita</strong> y recibí por e-mail las actualizaciones</p>
+        <form class="col-xl-12 col-md-12" id="formulario">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+            <label for="peso" class="form-label">Cuantos Pesos tiene</label>
+            <input type="number" class="form-control" id="peso">
+            <label for="dolar" class="form-label">Precio del Dolar</label>
+            <input type="number" class="form-control" id="dolar">
+            <button type="submit" class="btn colorBoton my-2">Calcular</button>
+        </form>
+        
+    </div>
+ 
+    <div class="row">
+        <div class="col-12 text-center" id="infoUsuarios"></div>
+    </div>
+    <button class="btn btn-lg px-4 gap-3 colorBoton m-3" id="admin"> Admin </button>
+    <div class="row">
+        <div id="datosAdmin"></div>
+    </div>
+
+
+   
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Dolares.com</span>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
